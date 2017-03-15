@@ -15,14 +15,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+/*
 h1,h2 {
     font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: #ffffff;
+  color: 	#FFFFFF;
   
-} 
-
+} */
+h1,
+h2,
 h3,
 h4,
 h5,
