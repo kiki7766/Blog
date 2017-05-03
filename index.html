@@ -33,6 +33,23 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
 </head>
 
 <body>
@@ -65,7 +82,7 @@
                               different DBMS can interoperate by using standards such as SQL and ODBC or JDBC to allow a single application to work with more than one DBMS. Database management systems are often classified
                               according to the database model that they support; the most popular database systems since the 1980s have all supported the relational model as represented by the SQL language. Sometimes a DBMS
                               is loosely referred to as a 'database'.</p>
-                            <p> <strong> Note: All the information about Database is taken via <a href="https://en.wikipedia.org/wiki/Database"> Wikipedia</a>.</strong></p>
+                            <p> <strong> Note: Source information: <a href="https://en.wikipedia.org/wiki/Database"> Wikipedia</a>.</strong></p>
 
 
                         </div><!--//content-->
@@ -114,8 +131,86 @@
                             </div><!--//item-->
                             <div class="item">
                                 <h3 class="title">Week Class of <span class="year">February 13 to 17, 2017</span></h3>
-                                <p>A</p>
-                            </div><!--//item-->
+                                <p>At this week we continue discussing about Functional Dependencies,  and some subtopic is the BCNF (Boyce-Codd-Normal-Form). In the BCNF, the relation R is in BCNF if, whenever there is a nontrivial FD a1,...an→b1….bm then {a1,....an} is a superkey for R. For example the left side of every nontrivial FD contains a key.</p>
+                                
+<p>At for the week per see, the discussion later on was on the third normal form, and fourth normal form, Chase, Test, Lossless Join etc. Most of the difficult is to understand at first is the FD, then to understand the BCNF to later apply the 3rd Normal Form. At the lab 4, I present the work  the exercise of a relation schema R (A, B, C) with FD A -> B. Suppose also that we decide to decompose this schema into S (A, B) and T (B, C). Give an example of an instance of relation R whose projection onto S and T and subsequent rejoining that does not yield the same relation instance. So, what I did was a table with some values. For example: </p>
+<center><p>Here we have that the relation R contains 2 tuples</p></center>
+<center><table>
+  <tr>
+    <th>A</th>
+    <th>B</th>
+    <th>C</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>2</td>
+    <td>5</td>
+  </tr></table></center>
+
+<center><p> In here, the view of the tables is the division of the first relation. So the effects of R in the relations with schemas S{A, B} and T{B, C} so they are: </center></p>
+<table> <object align=”left”> 
+
+  <tr>
+    <th>A</th>
+    <th>B</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>2</td>
+  </tr></table></object>
+
+
+<table> <object align=”right”> 
+
+  <tr>
+    <th>B</th>
+    <th>C</th>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>5</td>
+  </tr></table></object>
+<center><p> The result of a natural join with two relation, but the result of the natural join is not equal to the original relation R.</center></p>
+<center><table>
+  <tr>
+    <th>A</th>
+    <th>B</th>
+    <th>C</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+    <td>4</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+  </tr> 
+  <tr>
+    <td>3</td>
+    <td>5</td>
+    <td>3</td>
+    <td>5</td>
+  </tr></table></center>
+
+
+                  </div><!--//item-->
                             <div class="item">
                                 <h3 class="title">Week Class of <span class="year">February 20 to 24, 2017</span></h3>
                                 <p></p>
