@@ -236,23 +236,49 @@ tr:nth-child(even) {
                             
                             <div class="item">
                                 <h3 class="title">Week Class of <span class="year">February 27 to March 3, 2017</span></h3>
-                                <p></p>
+                                <p>At this week we start with chapter 4 that’s about the High-Level Database Model. Which this topic was not-entirely material is easy to understand because has some ups and downs. So understanding the E/R Model (Entity/Relationship Model) which uses three principal element types, they are : </p>
+                                <ul>     
+                                    <li> Entity</li>
+                                    <li>Attributes</li>
+                                    <li>Relationships</li> 
+                                </ul>
+<p> So in making some relationships are a bit complicated per se because you at first you must know about the schemas to easy way of understanding what’s an attribute, entities, and including the relations. Relationships, well must be related with the entity for example. A studio is an entity but own is a relationship so… I will say first … Relationship most of the time has to be many-to-many, or many-one (there’s also many to exactly or most one). So if we have 2 entities of studio and Movies and a relationship of own… so we can say that a Movie own many-one relationship with studio but you know that a Movie can have not only one studio can have many… so that depends of the assumptions made by the describer. </p>
+<p> At for this week I did somewhat lab6 that was about a flight and customers…. So I will say this. I DID IT CORRECTLY finally ;-; So I did that the customer (entity) has a many-to-many relationship named booked with an attribute (seats) many-to-many with flight. </p>
+
                             </div><!--//item-->
                             <div class="item">
                                 <h3 class="title">Week Class of <span class="year">March 6 to 10, 2017</span></h3>
-                                <p></p>
+                               <p>For this week we started the weak relationships. Is somewhat more complicated than the relationship per se. So I might have to be careful ;-; Hmm what can I say, is the same explanation that the past week material but with something more. For example, if I have a weak entity name crew then I must have a weak relationship with a strong entity name studio. 
+At the same time, we discuss about the UML. Which was pretty complicated at first but a little practice was needed to understand all the terms.
+</p>
+<p>As for the lab7 I choose the exercise 1 which I need to eliminate the redudant information being in a E/R model given. So As I could see in the E/R model given I eliminate the attribute of address because was redundant having it 2 times which doesn’t makes sense letting 2 attributes that makes the same function but only in different area WHICH was not necessary having 2 we could have only 1 and that was okay. Another thing that it was redundant was the entity set of AccSet because the E/R model have already another entity of Accounts so I eliminate that entity of AccSet. </p>
+
                             </div><!--//item-->
                             <div class="item">
                                 <h3 class="title">Week Class of <span class="year">March 13 to 17, 2017</span></h3>
-                                <p></p>
+                                <p>At this week was the test which I found it really "coje bobo" because I study more of the Relational Algebra and BAM ;-; I got stuck with the difficult material of E/R model.</p>
+                                <p>Another part of this week was the ... lab8 and 9!!!! Well this lab was the material of weak entity and relationships and a little of UML (in the lab8) and lab9 was about Algebraic and Logical Query Languages. So I did the UML exercise which was to explain how to convert them into relations.</p>
                             </div><!--//item-->
                             <div class="item">
                                 <h3 class="title">Week Class of <span class="year">March 20 to 24, 2017</span></h3>
-                                <p></p>
+                                <p>In this week we have 2 labs xD. So this time we start with another material of The Database Language SQL which I was WAITING about this material!! Well, At first I was thinking that it was easy as pie but well no, has some rules. We need first to test it in a terminal or whatsoever linux database to see if really runs. So each command is on the line to run or not. So we can start saying that we need some commands right? Well the commands are SELECT, FROM and WHERE, with this commands we can at least create a database schema. For example: </p>
+                                <ul> 
+                                    <p>Schema of Movies(title,year,length,genre,studioName,producerC#) so we would like to know all of the movies produced by Disney Studios in 1990 so in SQL language we do this: </p>
+                                    <li>SELECT *</li>
+                                    <li>FROM Movies</li>
+                                    <li>WHERE studioName = ‘Disney’ AND year = 1990;</li>
+                                </ul>
+                                <p>About the lab10 and lab11, I did the problem2 of lab10, well I got in trouble at some point because I didnt know how to include the exact words. So I was doing it but the part of assigning the word of "love" was meant to be written with‘%love%’ so the command will understand what exactly you want to do with this word. Overall, I did fine.</p>
                             </div><!--//item-->
                             <div class="item">
                                 <h3 class="title">Week Class of <span class="year">March 27 to 31, 2017</span></h3>
-                                <p></p>
+                                <p>At this week we continue with the chapter 6 and starting with chapter 7. But what I remember was working with the lab 12 which was very complicated for me, I will say, I couldnt understand well how to use the OR, AND, ALL, EXIST, IN, ANY,.. etc. But getting into practice I was able to solve one of the problems. I present the exercise 1 because was similar to the last time lab 10. So I begun discussing and them I was trouble again explaining why I did include an IN command. But since the problem said that Find the manufacturers of cars with a top speed of at least 120. So I did: </p>
+                                <ul>
+                                     <li>SELECT manufacturer</li>
+                                    <li>FROM Vehicle</li>
+                                    <li>WHERE model IN (SELECT model FROM Car WHERE topSpeed >=120);</li>
+                                </ul>
+                                <p>I will say I did well right? ._. </p>
                             </div><!--//item-->
                         </div><!--//content-->
                     </div><!--//section-inner-->
